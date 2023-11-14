@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.2/cdn/themes/light.css"
+    />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.2/cdn/shoelace-autoloader.js"
+    ></script>
+    <script src="scripts.js" type="module" defer></script>
+
+    <title>DWA10</title>
+  </head>
+  <body>
+    <header
+      style="
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 0.75rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+          'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      "
+    >
+      Tally Count
+    </header>
+    <div class="animation-keyframes" style="align-items: center;" >
+      <sl-animation easing="ease-in-out" duration="2000" play>
+        <div class="box" >
+          <style>
+            .animation-keyframes .box {
+              width: 100px;
+              height: 100px;
+              align-self: center;
+              background-color: var(--sl-color-primary-600);
+            }
+          </style>
+        </div>
+      </sl-animation>
+    </div>
+    <main>
+     <div style="text-align: center;">
+        <sl-input data-key="number" readonly value="0" size="large" style="font-size: 50px"/>
+      </div>
+     
+        <sl-button
+          data-key="subtract"
+          variant="success"
+          
+          size="large"
+          style="width: 49%; align-self: center"
+          >- Subtract -</sl-button
+        >
+        <sl-button
+          data-key="add"
+          variant="primary"
+       
+          size="large"
+          style="width: 49%; align-self: center;"
+          >+ Add +</sl-button
+        >
+      </div>
+      <sl-button 
+      data-key="refresh" 
+      variant="default" 
+      style="align-self: center; 
+      width: 100%">
+      Reset
+      </sl-button>
+      <p class="message" 
+      style="font-size: 16px; 
+      text-align: center; 
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+      </p>
+    </main>
+  </body>
+</html>
